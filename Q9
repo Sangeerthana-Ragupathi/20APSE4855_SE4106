@@ -1,0 +1,21 @@
+import kotlin.random.Random
+import java.util.Scanner
+
+fun main() {
+    val secretNumber = Random.nextInt(1, 11)  // Random number between 1 and 10
+    val scanner = Scanner(System.`in`)
+    var guess: Int
+
+    println("Guess a number between 1 and 10:")
+
+    do {
+        print("Enter your guess: ")
+        guess = scanner.nextInt()
+
+        when {
+            guess < secretNumber -> println("Too low! Try again.")
+            guess > secretNumber -> println("Too high! Try again.")
+            else -> println("Congratulations! You guessed the correct number.")
+        }
+    } while (guess != secretNumber)
+}
