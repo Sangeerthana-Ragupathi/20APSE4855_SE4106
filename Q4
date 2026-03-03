@@ -1,0 +1,8 @@
+fun main() {
+    val input = "Hello World"
+    val vowels = "aeiouAEIOU"
+    
+    val count = input.count { it in vowels }
+    
+    println("Number of vowels: $count")
+}
