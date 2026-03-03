@@ -1,0 +1,9 @@
+fun main() {
+    val numbers = listOf(3, -2, 5, -7, 8, 0, -1)
+
+    // Filter positive numbers and sum them
+    val sumOfPositive = numbers.filter { it > 0 }.sum()
+
+    println("List of numbers: $numbers")
+    println("Sum of positive numbers: $sumOfPositive")
+}
