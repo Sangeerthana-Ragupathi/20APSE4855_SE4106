@@ -1,0 +1,10 @@
+fun main() {
+    val number = 5  // You can change this number
+    var factorial = 1L  // Use Long to handle bigger factorials
+
+    for (i in 1..number) {
+        factorial *= i
+    }
+
+    println("Factorial of $number is $factorial")
+}
