@@ -1,0 +1,13 @@
+fun main() {
+    val numbers = listOf(10, 45, 3, 89, 23, 67)
+
+    var largest = numbers[0]
+
+    for (i in 1 until numbers.size) {
+        if (numbers[i] > largest) {
+            largest = numbers[i]
+        }
+    }
+
+    println("Largest number is: $largest")
+}
