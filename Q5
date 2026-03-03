@@ -1,0 +1,9 @@
+fun main() {
+    val numbers = listOf(1, 2, 3, 2, 4, 1, 5, 3)
+    
+    // Using 'distinct()' to remove duplicates
+    val uniqueNumbers = numbers.distinct()
+    
+    println("Original list: $numbers")
+    println("List without duplicates: $uniqueNumbers")
+}
