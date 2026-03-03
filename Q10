@@ -1,0 +1,10 @@
+fun main() {
+    val rows = 5
+
+    for (i in 1..rows) {             // Outer loop for each row
+        for (j in 1..i) {            // Inner loop for stars in each row
+            print("*")
+        }
+        println()                     // Move to the next line after each row
+    }
+}
