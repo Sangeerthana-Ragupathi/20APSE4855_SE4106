@@ -1,0 +1,12 @@
+fun main() {
+    val originalList = listOf("apple", "banana", "cherry", "date")
+    val reversedList = mutableListOf<String>()
+
+    // Loop from the last index to the first
+    for (i in originalList.size - 1 downTo 0) {
+        reversedList.add(originalList[i])
+    }
+
+    println("Original list: $originalList")
+    println("Reversed list: $reversedList")
+}
